@@ -275,6 +275,45 @@
 /* GetStart */
 
 .get-start {
-  background-color: #ffffff;
   width: 30%;
+  height: fit-content;
+  background: #0052fe;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  align-items: center;
+}
+
+.get-start-title {
+  padding: 1.5rem 3rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.get-start-subtitle {
+  width: 100%;
+  padding: 0rem 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.5rem;
+}
+
+.get-started-img {
+  margin-top: 3rem;
+  width: 200px
+}
+
+.get-started-btn {
+  padding: 0.7rem 2rem;
+  border-radius: 0.5rem;
+  border: #fff;
+  margin: 2rem 0;
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+  font-size: 16px;
 }
