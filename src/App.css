@@ -75,6 +75,7 @@
   background-color: #ffffff;
   width: 65%;
   padding: 40px;
+  border-radius: 10px;
 }
 
 .cal-name h1 {
@@ -316,4 +317,48 @@
   background-color: #fff;
   color: black;
   font-size: 16px;
+}
+
+/* faq css */
+
+.faq {
+  background-color: #ffffff;
+  width: 62%;
+  margin: 2rem;
+  text-align: left;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.faq-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+.faq-btn1 {
+  display: flex;
+  color: #212121;
+  padding: 5px 15px;
+  font-size: 16px;
+}
+
+.faq-container {
+  border: 1px solid rgb(230, 225, 225);
+  box-shadow: 0px 2px #cfcccc;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.arrow {
+  transform: rotate(180deg);
+}
+
+.answer{
+  padding: 1rem;
 }
