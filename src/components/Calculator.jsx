@@ -61,19 +61,20 @@ const Calculator = () => {
 
   return (
     <div className="main-container">
-      <div>
-        <h3>Free Crypto Tax Calculator Australia</h3>
+      <div className="cal-name">
+        <h1>Free Crypto Tax Calculator Australia</h1>
       </div>
-      <div>
-        <div>
+      <div className="fin-coun">
+        <div className="fin-year">
           <label>Financial Year</label>
           <select>
             <option>FY 2023-2024</option>
           </select>
         </div>
-        <div>
+        <div className="country">
           <label>Country</label>
           <FlagsSelect
+            className="sel-country"
             selected={selectedCountry}
             onSelect={(code) => setSelectedCountry(code)}
             countries={["AU", "US", "GB", "IN"]}
@@ -81,79 +82,141 @@ const Calculator = () => {
           />
         </div>
       </div>
-
-      <div>
-        <label>Enter purchase price of Crypto</label>
-        <input
-          type="number"
-          placeholder="20,000"
-          onChange={(e) => setIsPurchaseValue(e.target.value)}
-        />
-      </div>
-      <div>
-        <label>Enter sale price of Crypto</label>
-        <input
-          type="number"
-          placeholder="30,000"
-          onChange={(e) => setIsSalePrice(e.target.value)}
-        />
-      </div>
-      <div>
-        <label>Enter your Expenses</label>
-        <input
-          type="number"
-          placeholder="5,000"
-          onChange={(e) => setIsExpensePrice(e.target.value)}
-        />
-      </div>
-      <div>
-        <label>Investment Type</label>
-        <div>
-          <button onClick={() => handleClickButton(false)}>Short Term</button>
-          <button onClick={() => handleClickButton(true)}>Long Term</button>
-        </div>
-      </div>
-      <div>
-        <label>Select Your Annual Income</label>
-        <select onChange={handleTaxRateChange}>
-          {
-            INCOME_RANGES.map((item) => (
-              <option key={item.id}>{item.range}</option>
-            ))
-          }
-        </select>
-        <p>Tax Rate: {taxValue}</p>
-      </div>
-
-      {
-        isLongTerm && (
-          <div>
-            <label>Capital gains amount</label>
+      <div className="line"></div>
+      <div className="input-container">
+        <div className="input-box">
+          <label className="price-label">Enter purchase price of Crypto</label>
+          <div className="input-group">
+            <span className="currency-symbol">$</span>
             <input
               type="number"
-              readOnly value={isCapitalGains}
-            />
-
-            <label>Discount for long term gains</label>
-            <input
-              type="number"
-              readOnly value={isDiscount}
+              placeholder="20,000"
+              onChange={(e) => setIsPurchaseValue(e.target.value)}
+              className="purchase-input"
             />
           </div>
-        )
-      }
-
-      <div>
-        <div>
-          <p>Net Capital Gains tax amount</p>
-          <h5>${isNetCapitalGains}</h5>
         </div>
+
+        <div className="input-box">
+          <label className="price-label">Enter sale price of Crypto</label>
+          <div className="input-group">
+            <span className="currency-symbol">$</span>
+            <input
+              type="number"
+              placeholder="30,000"
+              onChange={(e) => setIsSalePrice(e.target.value)}
+              className="purchase-input"
+            />
+          </div>
+        </div>
+
+        <div className="input-box">
+          <label className="price-label">Enter your Expenses</label>
+          <div className="input-group">
+            <span className="currency-symbol">$</span>
+            <input
+              type="number"
+              placeholder="5,000"
+              onChange={(e) => setIsExpensePrice(e.target.value)}
+              className="purchase-input"
+            />
+          </div>
+        </div>
+
+        <div className="investment-container">
+          <label className="investment-label">Investment Type</label>
+          <div className="button-group">
+            <div className="button-wrapper">
+              <button
+                className={`investment-button short-term ${isShortTerm ? 'active' : ''}`}
+                onClick={() => handleClickButton(false)}
+              >
+                Short Term
+                {isShortTerm && <span className="checkmark">✓</span>}
+              </button>
+              <p className="duration-text"> &#60; 12 Months</p>
+            </div>
+            <div className="button-wrapper">
+              <button
+                className={`investment-button long-term ${isLongTerm ? 'active' : ''}`}
+                onClick={() => handleClickButton(true)}
+              >
+                Long Term
+                {isLongTerm && <span className="checkmark">✓</span>}
+              </button>
+              <p className="duration-text"> &#62; 12 Months</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="input-box">
+          <label className="price-label">Select Your Annual Income</label>
+          <div className="input-group">
+            <select onChange={handleTaxRateChange} className="income-select">
+              {INCOME_RANGES.map((item) => (
+                <option key={item.id}>{item.range}</option>
+              ))}
+            </select>
+          </div>
+        </div>
+
+        <div className="input-box">
+          <label className="price-label">Tax Rate :</label>
+          <div className="taxRate">
+            <p>{taxValue}</p>
+          </div>
+        </div>
+
         <div>
-          <p>The tax you need to pay*</p>
-          <h5>${istaxpayable}</h5>
+          {
+            isLongTerm && (
+              <div className="input-box">
+                <label className="price-label">Capital gains amount</label>
+                <div className="input-group">
+                  <span className="currency-symbol">$</span>
+                  <input
+                    type="number"
+                    placeholder="5,000"
+                    readOnly value={isCapitalGains}
+                    className="purchase-input"
+                  />
+                </div>
+              </div>
+            )
+          }
+        </div>
+
+        <div>
+          {isLongTerm && (
+            <div className="input-box">
+              <label className="price-label">Discount for long term gains</label>
+              <div className="input-group">
+                <span className="currency-symbol">$</span>
+                <input
+                  type="number"
+                  placeholder="2,500"
+                  readOnly value={isDiscount}
+                  className="purchase-input"
+                />
+              </div>
+            </div>
+          )}
+        </div>
+
+        <div className="result">
+          <div className="box green-text">
+            <p>Net Capital Gains tax amount</p>
+            <h5>&#36;{isNetCapitalGains}</h5>
+          </div>
+        </div>
+        <div className="result">
+          <div className="box blue-text">
+            <p>The tax you need to pay*</p>
+            <h5>&#36;{istaxpayable}</h5>
+          </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 };
 

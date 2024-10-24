@@ -38,22 +38,243 @@
 
 @media (max-width: 768px) {
   .navbar {
-      padding: 0px 20px;
+    padding: 0px 20px;
   }
 
   .navbar-item {
-      display: none;
+    display: none;
   }
 
   .nav-menu {
-      display: block;
-      cursor: pointer;
+    display: block;
+    cursor: pointer;
   }
-  
+
 }
 
 @media (max-width: 480px) {
   .navbar {
-      padding: 0px 15px;
+    padding: 0px 15px;
   }
+}
+
+
+/* calculator */
+
+.cal-start {
+  display: flex;
+  margin: 20px 30px;
+  gap: 50px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 65%;
+  padding: 40px;
+}
+
+.cal-name h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.fin-coun {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.fin-year,
+.country {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.fin-year select {
+  padding: 10px 40px;
+  background-color: #eff2f5;
+  font-size: 15px;
+}
+
+.sel-country {
+  width: 15rem;
+  font-size: 15px;
+}
+
+.line {
+  width: 45rem;
+  height: 1.5px;
+  margin: 10px 0;
+  background-color: #dadde1;
+}
+
+.input-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.input-box {
+  margin: 8px 0;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.price-label {
+  font-size: 16px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: #EFF2F5;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid gray;
+}
+
+.input-group:hover {
+  border: 1px solid rgb(17, 0, 255);
+}
+
+.currency-symbol {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.purchase-input {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 4px 8px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.investment-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.investment-label {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.investment-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2.8rem;
+  border: 2px solid #374151;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #374151;
+  cursor: pointer;
+}
+
+.investment-button.active {
+  color: #1d4ed8;
+  border-color: #2563eb;
+  background-color: rgba(0, 82, 254, 0.06);
+}
+
+.checkmark {
+  font-size: 0.9rem;
+  color: #1d4ed8;
+  margin-left: 15px;
+}
+
+.duration-text {
+  font-size: 15px;
+  color: #374151;
+  margin: 0.25rem 0;
+}
+
+.income-select {
+  height: 30px;
+  width: 100%;
+  padding: 0 12px;
+  border: none;
+  font-size: 15px;
+  outline: none;
+  background-color: #EFF2F5;
+}
+
+.income-select option {
+  padding: 12px;
+  font-size: 15px;
+
+}
+
+.taxRate {
+  margin-top: 15px;
+}
+
+.long-term {
+  display: flex;
+  gap: 20px;
+}
+
+.result .box {
+  background-color: #EBF9F4;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.result .box.green-text h5 {
+  color: #0FBA83;
+}
+
+.result .box.blue-text h5 {
+  color: #0141CF;
+}
+
+.result p {
+  font-size: 16px;
+}
+
+.result .box h5 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+
+/* GetStart */
+
+.get-start {
+  background-color: #ffffff;
+  width: 30%;
 }
