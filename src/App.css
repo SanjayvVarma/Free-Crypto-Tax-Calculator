@@ -1,6 +1,6 @@
-/* Navbar */
+ /* Navbar */
 
-.navbar {
+ .navbar {
   display: flex;
   justify-content: space-between;
   background-color: #ffffff;
@@ -418,4 +418,153 @@
   outline: none;
   background-color: #FFB800;
   border-radius: 5px;
+}
+
+/* footer css */
+
+.footer {
+  background-color: #200E32;
+  padding: 2rem 3.5rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.footer-top a {
+  color: #3B82F6;
+  padding-left: 20px;
+}
+
+.footer-middle {
+  display: flex;
+  margin: 30px;
+  justify-content: space-between;
+}
+
+.footer-middle h3 {
+  color: #ffffff;
+}
+
+.footer-middle a {
+  color: rgba(255, 255, 255, 0.6);
+  /* opacity: ; */
+}
+
+.footer-names {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 17px;
+}
+
+.footer-names img {
+  width: 10rem;
+  padding-left: 20px;
+}
+
+.footer-names a {
+  text-decoration: none;
+}
+
+.footer-names a span{
+  background-color: #0052fe;
+  color: #fff;
+  padding: 3px;
+  font-size: 13px;
+}
+
+.footer-names a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom{
+ text-align: center;
+ color: rgba(255, 255, 255, 0.6);
+ margin-top: 2rem;
+ font-size: 18px;
+} 
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .main-container {
+    width: 80%;
+    padding: 30px;
+  }
+
+  .get-start {
+    width: 40%;
+  }
+
+  .subscribe {
+    padding: 3rem 10rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-item {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cal-start {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .fin-coun {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .result .box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .input-container {
+    grid-template-columns: 1fr;
+  }
+
+  .get-start {
+    width: 80%;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    padding: 3rem 5rem;
+  }
+
+  .footer-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .get-start-title {
+    font-size: 1.5rem;
+  }
+
+  .cal-name h1 {
+    font-size: 28px;
+  }
+
+  .footer-top,
+  .footer-middle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-sub-btn {
+    flex-direction: column;
+  }
 }

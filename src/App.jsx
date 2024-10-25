@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import GetStart from './components/GetStart'
 import FAQ from './components/FAQ'
 import Subscribe from './components/Subscribe'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       </div>
       <FAQ />
       <Subscribe />
+      <Footer />
     </>
   )
 }
