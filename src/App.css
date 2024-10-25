@@ -359,6 +359,63 @@
   transform: rotate(180deg);
 }
 
-.answer{
+.answer {
   padding: 1rem;
+}
+
+/* Subscribe */
+
+.sub-container {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  background-color: #0052fe;
+  margin: 3rem;
+  padding: 3rem 20rem;
+  border-radius: 1rem;
+}
+
+.img-container img {
+  width: 13rem;
+}
+
+.sub-title h3 {
+  color: #ffffff;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  padding-bottom: 2rem;
+}
+
+.input-sub-btn {
+  background-color: #ffffff;
+  height: 3rem;
+  text-align: center;
+  display: flex;
+  gap: 6.8rem;
+  border-radius: 5px;
+}
+
+.input-sub-btn input {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 13px;
+}
+
+.input-sub-btn button {
+  width: 10rem;
+  margin: 3px 0;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  background-color: #FFB800;
+  border-radius: 5px;
 }

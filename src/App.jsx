@@ -3,6 +3,7 @@ import Calculator from './components/Calculator'
 import Navbar from './components/Navbar'
 import GetStart from './components/GetStart'
 import FAQ from './components/FAQ'
+import Subscribe from './components/Subscribe'
 
 function App() {
 
@@ -13,8 +14,8 @@ function App() {
         <Calculator />
         <GetStart />
       </div>
-
       <FAQ />
+      <Subscribe />
     </>
   )
 }
