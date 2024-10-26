@@ -221,19 +221,3 @@ const Calculator = () => {
 };
 
 export default Calculator;
-
-
-
-
-{/* <div style={{ margin: "8px 0", backgroundColor: "#EFF2F5", padding: "8px" }}>
-<label htmlFor="purchase-price" style={{ display: "flex", alignItems: "center" }}>
-  <span style={{ marginRight: "4px" }}>$</span>
-  <input
-    type="text"
-    id="purchase-price"
-    placeholder="30,000"
-    onInput={handlePurchaseChange}
-    style={{ border: "none", outline: "none", background: "none" }}
-  />
-</label>
-</div> */}
