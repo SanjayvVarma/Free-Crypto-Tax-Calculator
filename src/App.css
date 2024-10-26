@@ -208,7 +208,7 @@
 .checkmark {
   font-size: 0.9rem;
   color: #1d4ed8;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .duration-text {
@@ -237,10 +237,6 @@
   margin-top: 15px;
 }
 
-.long-term {
-  display: flex;
-  gap: 20px;
-}
 
 .result .box {
   background-color: #EBF9F4;
