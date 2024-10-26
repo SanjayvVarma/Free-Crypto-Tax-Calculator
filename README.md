@@ -63,7 +63,8 @@ This project is a **Free Crypto Tax Calculator** designed specifically for Austr
 ## Extra Packages
 
 - `react-flags-select`: For country flag selection.
-- Other standard packages for React, routing, and state management.
+- `react-icons`: For social media icon.
+- Other standard packages for React and state management.
 
 ## Learning Outcomes
 
