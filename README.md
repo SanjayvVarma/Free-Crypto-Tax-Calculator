@@ -6,7 +6,7 @@ This project is a **Free Crypto Tax Calculator** designed specifically for Austr
 
 ## Live Demo
 
-You can access the live demo of the project here: [Weather App](https://free-crypto-tax-calculator.vercel.app/)
+You can access the live demo of the project here: [Free Crypto Tax Calculator](https://free-crypto-tax-calculator.vercel.app/)
 
 ## Tech Stack
 - **Frontend**: React, React-flags-Select, react-icons
