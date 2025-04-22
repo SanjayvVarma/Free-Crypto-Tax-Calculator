@@ -12,9 +12,6 @@ You can access the live demo of the project here: [Free Crypto Tax Calculator](h
 - **Frontend**: React, React-flags-Select, react-icons
 - **UI Styling**: CSS and Flexbox for layout and responsiveness
 
-## Live Demo
-
-You can access the live demo of the project here: [FreeCryptoTaxCalculator](https://free-crypto-tax-calculator.vercel.app/)
 
 ## ▶️ Demo Video
 
