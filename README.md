@@ -8,6 +8,14 @@ This project is a **Free Crypto Tax Calculator** designed specifically for Austr
 - **Frontend**: React, React-flags-Select, react-icons
 - **UI Styling**: CSS and Flexbox for layout and responsiveness
 
+## Live Demo
+
+You can access the live demo of the project here: [FreeCryptoTaxCalculator](https://free-crypto-tax-calculator.vercel.app/)
+
+## ▶️ Demo Video
+
+[Watch the Demo](https://drive.google.com/file/d/1AZ9YR7raHjphgKT1hVFFzsskjkkLnynI/view?usp=sharing)
+
 ## Features
 
 1. **Tax Calculator**:
