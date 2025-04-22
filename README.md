@@ -4,7 +4,11 @@
 
 This project is a **Free Crypto Tax Calculator** designed specifically for Australian users. It provides a simple interface for calculating potential tax liabilities on cryptocurrency investments, differentiating between long-term and short-term investments.
 
-**Tech Stack**:
+## Live Demo
+
+You can access the live demo of the project here: [Free Crypto Tax Calculator](https://free-crypto-tax-calculator.vercel.app/)
+
+## Tech Stack
 - **Frontend**: React, React-flags-Select, react-icons
 - **UI Styling**: CSS and Flexbox for layout and responsiveness
 
