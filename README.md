@@ -104,4 +104,3 @@ Some areas for potential enhancement:
 - **Real-Time API Data**: Fetching live exchange rates and tax brackets.
 - **Currency Selector**: Adding support for multiple currencies beyond AUD.
 - **Expanded Income Brackets**: Allow users to define custom income ranges.
-
